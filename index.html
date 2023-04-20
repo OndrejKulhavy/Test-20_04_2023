@@ -25,25 +25,25 @@
         </div>
     </nav>
 
+    <div class="container-fluid d-flex">
+        <label for="range" class="form-label m-4">Set number of rows</label>
+        <input type="range" min="10" max="50" value="10" class="form-range m-4" id="range">
+        <button type="button" onClick="loadit()" class="btn btn-dark m-4">Reload</button>
+    </div>
+
     <table class="table">
         <thead>
             <tr>
-                <th scope="col">#</th>
+                <th></th>
                 <th scope="col">Name</th>
                 <th scope="col">Max Age</th>
                 <th scope="col">Min Age</th>
+                <th scope="col">Imgs</th>
             </tr>
         </thead>
-        <tbody>
-            <tr>
-                <th scope="row">1</th>
-                <td>Mark</td>
-                <td>Otto</td>
-                <td>@mdo</td>
-            </tr>
+        <tbody id="obsah" style="transition: all 2s;">
         </tbody>
     </table>
-
 </body>
 
 </html>
